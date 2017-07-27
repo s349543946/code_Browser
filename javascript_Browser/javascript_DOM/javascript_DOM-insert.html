@@ -1,0 +1,57 @@
+
+<html>
+
+ <head>
+	<title>javascript</title>
+ </head>
+	<p id="js">JavaScript</p>
+	<div id="list">
+		<p id="java">Java</p>
+		<p id="python">Python</p>
+		<p id="scheme">Scheme</p>
+	</div>
+	<ol id="test-list">
+    <li class="lang">Scheme</li>
+    <li class="lang">JavaScript</li>
+    <li class="lang">Python</li>
+    <li class="lang">Ruby</li>
+    <li class="lang">Haskell</li>
+    </ol>
+  <script>
+	var 
+	  js =document.getElementById('js'),
+	  list = document.getElementById('list');
+	list.appendChild(js);	
+	</script>
+	<script>
+		var
+		list = document.getElementById('list');
+		haskell = document.createElement('p');
+		ref=document.getElementById('python')
+	haskell.id = 'haskell';
+	haskell.innerText ='Haskell';
+	//list.appendChild(haskell);//默认插入到末尾
+	//插入到指定节点之前
+	list.insertBefore(haskell,ref);
+	</script>
+	
+	<script>
+	var list = document.getElementById('test-list');
+	var cd=list.children;
+    for ( var i = 0; i < cd.length-1; i++) {
+        for(var j=1;j<cd.length-i;j++)
+            if(cd[j-1].innerText>cd[j].innerText)
+                list.insertBefore(cd[j],cd[j-1]);
+    }
+	
+    </script>
+	<script>
+	var d = document.createElement('style');
+	d.setAttribute('type', 'text/css');
+	d.innerHTML ='p { color: red }';
+	document.getElementsByTagName('head')[0].appendChild(d);
+	
+    
+	
+	</script>
+</html>

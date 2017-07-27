@@ -1,0 +1,45 @@
+<html>
+ <head>
+ <title>form</title>
+ </head>
+  <form id="test-register" action="#" target="_blank" onsubmit="return checkRegisterForm()">
+    <p id="test-error" style="color:red"></p>
+    <p>
+        用户名: <input type="text" id="username" name="username">
+    </p>
+    <p>
+        口令: <input type="password" id="password" name="password">
+    </p>
+    <p>
+        重复口令: <input type="password" id="password-2">
+    </p>
+    <p>
+        <button type="submit">提交</button> <button type="reset">重置</button>
+    </p>
+  </form>
+  <script>
+	var checkRegisterForm = function () {
+      var input_user = document.getElementById('username')
+    var re_user = /^\w{3,10}$/g;
+    var input_pwd1 = document.getElementById('password')
+    var re_pwd = /^.{6,20}$/g;
+    var input_pwd2 = document.getElementById('password-2')
+    var error_message = document.getElementById('test-error')
+    if(re_user.test(input_user.value)!==true){
+            error_message.innerText='用户名必须是3~10位数字或英文字母';
+             alert('用户名必须是3~10位数字或英文字母');
+            return false;}
+   else if(re_pwd.test(input_pwd1.value)!==true){
+          error_message.innerText='口令必须是6~20位字符';
+          alert('口令必须是6~20位字符');
+           return false;}
+   else if(input_pwd1.value!==input_pwd2.value){
+                error_message.innerText='两次口令要一直致';
+                alert('两次口令要一直致');
+                return false;}
+   else {
+         error_message.innerText = ""
+         return true;}
+    }
+  </script>
+</html>

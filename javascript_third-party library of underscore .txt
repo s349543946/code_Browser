@@ -1,0 +1,8 @@
+underscore则提供了一套完善的函数式编程的接口
+underscore会把自身绑定到唯一的全局变量_上。
+例如:
+'use strict'
+_.map([1,2,3],(x)=>x*x);//[1，4，9]
+underscore的map()还可以作用于Object:
+'use strict'
+_.map({a:1, b:2, c:3},(x,y)=>x+'='+y);{'a=1','b=2','c=3'}

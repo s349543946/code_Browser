@@ -1,0 +1,9 @@
+js 中所有数字都是以双精度浮点数来存储的。即64位； 1字节（byte）=8位（bits）
+Boolean([]); //true
+Number([]); //0
+Number({}); // NaN
+Number(false); //0
+
+console.log(([])?true:fasle);// => console.log((true)?true:false);
+console.log([]==false?true:false); // => console.log(0==0?true:false);
+console.log(({}==false)?true:false); // => console.log((NaN==0)?true:false);

@@ -1,0 +1,5 @@
+在bootstrap中， 关于导航条
+应该将被包裹的元素放到navbar-collapse类中
+表单应该放置于navbar-form内
+可以使用navbar-left和navbar-right来对齐导航条
+可以使用navbar-fixed-top和navbar-fixed-bottom来将导航条固定到顶部或底部

@@ -3,3 +3,5 @@
 2,link（数据绑定）。
 
 angularjs的服务是一个单例对象或函数，对外提供特定的功能。
+
+angularjs中factory,service,provider 自定义服务

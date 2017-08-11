@@ -1,0 +1,3 @@
+Yahoo! User Interface  库  (YUI)  包含一个  bucketload 。
+和  YUI  一样， ExtJS  包含大量开箱即用的组件，其中有很多功能强大的网格控件，支持内联编辑、分页、筛选、分组、汇总、缓冲和数据绑定。
+MooTools  和  Prototype 、 jQuery  不包含开箱即用的  UI  控件和小部件.

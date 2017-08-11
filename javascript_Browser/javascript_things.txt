@@ -2,3 +2,4 @@ click是鼠标点击事件
 contextmenu 是当浏览者按下鼠标右键出现菜单时或者通过键盘的按键触发页面菜单时触发的事件 [ 试试在页面中的 <body> 中加入 onContentMenu="return false" 就可禁止使用鼠标右键了 ]
 mouseout 事件会在鼠标指针移出指定的对象时发生。
 keydown 事件会在用户按下一个键盘按键时发生，由键盘触发
+preventDefault()阻止默认事件的默认操作

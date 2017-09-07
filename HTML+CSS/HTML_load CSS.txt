@@ -1,0 +1,6 @@
+<head>
+  <link href="main1.css" rel="stylesheet">
+  <link href="main2.css" rel="stylesheet">
+</head>
+main1.css和main2.css同时开始加载，先加载完成的优先解析
+如果main1.css和main2.css中有相同的选择器规则，那么main2.css中的规则将合并main1.css的规则

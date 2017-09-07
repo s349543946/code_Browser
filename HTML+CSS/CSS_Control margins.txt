@@ -24,6 +24,7 @@ float：right 显然就打乱了从左到右的文档流排列，而为什么说float：left也会脱离文档
 4、position: fixed
 
 　　可以简单说fixed是特殊版的absolute，fixed元素总是相对于body定位的。
+5.inherit 规定从父元素继承 position 属性的值。
 
 6、sticky
 

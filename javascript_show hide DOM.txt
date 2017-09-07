@@ -1,0 +1,2 @@
+ng-if会移除dom，生成dom，而ng-show只是改变其display属性。
+ng-class是AngularJS预设的一个指令，用于动态自定义dom元素的css class name 

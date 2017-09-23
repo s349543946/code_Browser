@@ -1,0 +1,19 @@
+hash+hashchange实现
+
+
+这种方法的好处在于支持IE浏览器。对早期的一些浏览器的支持比较好。
+
+实现原理：
+
+location.hash始终指向页面url 中#之后的内容
+当当前页面的url ='www.baidu.com',可以在浏览器的控制台输入location.hash为空，当页面指向url ='www.baidu.com/#/hello'的时候，location.hash = '#/hello'。通过读取location.hash可以知道当前页面所处的位置。通过hashchange事件可以监听location.hash的变化，从而进行相应的处理即可。
+
+那么如何触发hash的改变呢？这里主要由两种方法：
+
+
+1.设置a标签，href = '#/blue'，当点击标签的时候，可以在当前url的后面增加上'#/blue'，同时触发hashchange,再回调函数中进行处理。
+
+2.直接在js中对location.hash = '#/blue'即可，此时url会改变，也会触发hashchange事件。
+
+
+转载链接：http://www.jianshu.com/p/5a5813648d87

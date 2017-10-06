@@ -1,0 +1,27 @@
+<em> 标签告诉浏览器把其中的文本表示为强调的内容。对于所有浏览器来说，这意味着要把这段文字用斜体来显示。
+
+h1到h6都是标题标签
+h1标签加粗大号文字
+
+js延迟加载的方式只有IE浏览器支持的是defer
+
+ng-if会移除dom，生成dom，而ng-show只是改变其display属性。
+ng-class是AngularJS预设的一个指令，用于动态自定义dom元素的css class name 
+
+alt是html标签的属性，而title既是html标签，又是html属性。 
+title标签这个不用多说，网页的标题就是写在<title></title>这对标签之内的。 
+title作为属性时，用来为元素提供额外说明信息。例如，给超链接标签a添加了title属性，把鼠标移动到该链接上面是，就会显示title的内容，以达到补充说明或者提示的效果。 
+而alt属性则是用来指定替换文字，只能用在img、area和input元素中（包括applet元素），用于网页中图片无法正常显示时给用户提供文字说明使其了解图像信息。
+
+HTML5内建对象用于在画布上绘制是getContent
+
+html5规范不允许加id，但是浏览器厂商却实现了这个功能,
+label标签只有两个属性
+for（ 规定 label 绑定到哪个表单元素。 ）
+form（规定 label 字段所属的一个或多个表单）
+
+<hr>分割线
+<br>html5应该写成<br />
+
+input type：
+button，checkbox，file，hidden，image，password，radio，reset，submit，text

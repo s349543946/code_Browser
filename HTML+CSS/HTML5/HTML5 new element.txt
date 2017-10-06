@@ -1,1 +1,7 @@
 datalist, keygen, output
+
+header,nav,footer,aside,article,section
+
+移除的元素：
+1. 纯表现的元素：basefont，big，center，font, s，strike，tt，u；
+2. 对可用性产生负面影响的元素：frame，frameset，noframes；

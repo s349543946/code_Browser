@@ -1,0 +1,5 @@
+transform（2D、3D变换）
+
+      首先是transform-2D变换，2D变换有偏移、缩放、旋转和倾斜，每一个需要用到不同的属性值，分别为：translate、scale、rotate、skew；其中translate、scale、skew具有x轴和y轴，比如translateX（50px）表示向X轴正半轴偏移50像素，translateY（40px）表示向Y轴负半轴偏移40像素，当然，也可以合起来写：translate（50px，40px），表示同时向X轴Y轴分别偏移50和40像素，中间用逗号隔开。
+
+      transform-3D变换比2D变换每个属性都多了一个Z轴，当然需要设置transform-style：preserve-3d；才能看到3D视角效果，否则只能看到平面效果
